@@ -31,7 +31,7 @@ class Microwave extends ElectricAppliance {
     foodWarmer() {
         if (confirm('Would you like to turn on the microwave?')) {
             this.turnON();
-
+            // вынести отдельно
             if (confirm('Are you hungry?')) {
                 this.timeOfDay = Number(prompt('Enter time of day in ful hours'));
                 switch (true) {
