@@ -40,8 +40,8 @@ function TV(name, power, diagonal){
 TV.prototype = new ElectricAppliance();
 
 // Смотрим телевизор
-TV.prototype.watchingTV = function (diagonal){
-    return diagonal < 50 ? console.log('Watch TV safely!') : console.log("Don't get close!")
+TV.prototype.watchingTV = function (){
+    return this.diagonal < 50 ? console.log('Watch TV safely!') : console.log("Don't get close!")
 }
 
 const microwaveSumsung = new Microwave('Sumsung', 1500, 1000);
